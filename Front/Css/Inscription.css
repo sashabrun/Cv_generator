@@ -6,7 +6,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Utilisation de min-height pour assurer que le contenu est au moins de la hauteur de l'écran */
+    min-height: 100vh;
 }
 
 h1 {
@@ -68,7 +68,6 @@ a:hover {
     color: #0083ff;
 }
 
-/* Utilisation des media queries pour rendre le formulaire plus étroit sur les écrans plus petits */
 @media screen and (max-width: 600px) {
     form {
         width: 90%;
