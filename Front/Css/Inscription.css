@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(0, 47, 103, 0.91);
+    color: #fff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Utilisation de min-height pour assurer que le contenu est au moins de la hauteur de l'écran */
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+form {
+    width: 70%;
+    max-width: 350px;
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+    background-color: #1967d5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+input {
+    width: calc(100% - 1px);
+    padding: 6px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 15px;
+}
+
+label, input {
+    display: block;
+}
+
+input[type="submit"] {
+    background-color: #003c7c;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0081ff;
+}
+
+a {
+    color: #003c7c;
+}
+
+a:hover {
+    color: #0083ff;
+}
+
+/* Utilisation des media queries pour rendre le formulaire plus étroit sur les écrans plus petits */
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}
