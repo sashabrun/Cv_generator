@@ -29,4 +29,14 @@ function getUser($userID)
     $stmt->execute([$userID]);
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+
+function getUserByPseudo($pseudo)
+{
+    global $conn;
+    $query = "SELECT * FROM users WHERE pseudo=?";
+    $stmt = $conn->prepare($query);
+    $stmt->execute([$pseudo]);
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $result;
+}
 ?>

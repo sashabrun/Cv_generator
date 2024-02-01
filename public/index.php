@@ -11,10 +11,6 @@
 
 Salut les amis comment ca va ?
 
-    <?php
-    include "../config/config.php";
 
-
-    ?>
 </body>
 </html>
