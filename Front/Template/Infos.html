@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Css/Infos.css">
+    <meta charset="UTF-8">
+    <title>Informations</title>
+</head>
+<body>
+<div class="container">
+    <h1>Parcours Académique</h1>
+    <h2>Ajouter une formation :</h2>
+    <form action="file.php" method="post">
+
+        <label>Diplôme :</label>
+        <input name="qualification" type="text" />
+
+        <label>Date :</label>
+        <div class="date">
+            <p>Du</p>
+            <input name="dateStart" type="date">
+            <p>au</p>
+            <input name="dateEnd" type="date" />
+        </div>
+
+        <label>Etablissement :</label>
+        <input name="school" type="text" /></p>
+
+        <input type="submit" name="submit" value="Ajouter">
+    </form>
+    <!--        list de tous le parcours académique-->
+</div>
+<div class="container">
+    <h1>Expériences Professionnelle</h1>
+    <h2>Ajouter une expérience :</h2>
+    <form action="file.php" method="post">
+
+        <label>Nom de l'entreprise :</label>
+        <input name="company" type="text" />
+
+        <label>Poste :</label>
+        <input name="post" type="text" />
+
+        <label>Durée :</label>
+        <div class="date">
+            <p>Du</p>
+            <input name="dateStart" type="date">
+            <p>au</p>
+            <input name="dateEnd" type="date" />
+        </div>
+
+        <label>Description :</label>
+        <input name="descriptions" type="text" /></p>
+
+        <input type="submit" name="submit" value="Ajouter">
+    </form>
+    <!--        list de tous le parcours académique-->
+</div>
+<div class="container">
+    <h1>Loisirs</h1>
+    <h2>Ajouter un loisir :</h2>
+    <form action="file.php" method="post">
+
+        <label>Nom du loisir :</label>
+        <input name="loisir" type="text" />
+
+        <input type="submit" name="submit" value="Ajouter">
+
+    </form>
+    <!--        list de tous les loisirs-->
+</div>
+<a href="Accueil.html">
+    <input type="button" name="submit" value="Retour page d'Accueil">
+</a>
+</body>
+</html>

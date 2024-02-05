@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(0, 47, 103, 0.91);
+    color: #fff;
+    margin: 0;
+    display: block;
+    text-align: center;
+}
+
+.header {
+    padding: 10px;
+    text-align: right;
+    margin-right: 7%;
+    margin-top: 5%;
+}
+
+.logout-button,
+input[type="button"] {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 20px;
+    border: 1px solid #fff;
+}
+
+.logout-button {
+    background-color: #003c7c;
+}
+
+.logout-button:hover,
+input[type="button"]:hover {
+    background-color: #0081ff;
+}
+
+.container {
+    margin-top: 11vh;
+    margin-bottom: 5vh;
+    width: 85%;
+    background-color: #1967d5;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    display: inline-block;
+    text-align: center;
+}
+
+.container2 {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 85%;
+    background-color: #1967d5;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    display: inline-block;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+input[type="button"] {
+    width: 48%;
+    padding: 10px;
+    background-color: #003c7c;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 2.75%;
+    border: 1px solid #fff;
+}
+
+input[type="button"]:hover {
+    background-color: #0081ff;
+}
+
+.cv-entry {
+    background-color: #003c7c;
+    color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    input[type="button"] {
+        width: 98%;
+    }
+}
