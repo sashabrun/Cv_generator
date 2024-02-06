@@ -9,38 +9,15 @@
 <div class="container">
     <h1>Parcours Académique</h1>
     <h2>Ajouter une formation :</h2>
-    <form action="file.php" method="post">
+    <form action="../../public/infos.php" method="post">
 
         <label>Diplôme :</label>
         <input name="qualification" type="text" />
 
-        <label>Date :</label>
-        <div class="date">
-            <p>Du</p>
-            <input name="dateStart" type="date">
-            <p>au</p>
-            <input name="dateEnd" type="date" />
-        </div>
-
         <label>Etablissement :</label>
         <input name="school" type="text" /></p>
 
-        <input type="submit" name="submit" value="Ajouter">
-    </form>
-    <!--        list de tous le parcours académique-->
-</div>
-<div class="container">
-    <h1>Expériences Professionnelle</h1>
-    <h2>Ajouter une expérience :</h2>
-    <form action="file.php" method="post">
-
-        <label>Nom de l'entreprise :</label>
-        <input name="company" type="text" />
-
-        <label>Poste :</label>
-        <input name="post" type="text" />
-
-        <label>Durée :</label>
+        <label>Date :</label>
         <div class="date">
             <p>Du</p>
             <input name="dateStart" type="date">
@@ -51,25 +28,52 @@
         <label>Description :</label>
         <input name="descriptions" type="text" /></p>
 
+
         <input type="submit" name="submit" value="Ajouter">
+    </form>
+    <!--        list de tous le parcours académique-->
+</div>
+<div class="container">
+    <h1>Expériences Professionnelle</h1>
+    <h2>Ajouter une expérience :</h2>
+    <form action="../../public/infos.php" method="post">
+
+        <label>Nom de l'entreprise :</label>
+        <input name="company" type="text" />
+
+        <label>Poste :</label>
+        <input name="post" type="text" />
+
+        <label>Durée :</label>
+        <div class="date">
+            <p>Du</p>
+            <input name="dateStart2" type="date">
+            <p>au</p>
+            <input name="dateEnd2" type="date" />
+        </div>
+
+        <label>Description :</label>
+        <input name="descriptions2" type="text" /></p>
+
+        <input type="submit" name="submit2" value="Ajouter">
     </form>
     <!--        list de tous le parcours académique-->
 </div>
 <div class="container">
     <h1>Loisirs</h1>
     <h2>Ajouter un loisir :</h2>
-    <form action="file.php" method="post">
+    <form action="../../public/infos.php" method="post">
 
         <label>Nom du loisir :</label>
         <input name="loisir" type="text" />
 
-        <input type="submit" name="submit" value="Ajouter">
+        <input type="submit" name="submit3" value="Ajouter">
 
     </form>
     <!--        list de tous les loisirs-->
 </div>
-<a href="Accueil.html">
-    <input type="button" name="submit" value="Retour page d'Accueil">
+<a href="Accueil.php">
+    <input type="button" name="submit4" value="Retour page d'Accueil">
 </a>
 </body>
 </html>

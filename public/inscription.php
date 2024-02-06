@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($password == $repeatPassword) {
         addUser($pseudo, $nom, $prenom, $password, $email, $numeroTelephone);
-        header("Location: ../public/index.php");
+        header("Location: ../../Front/Template/Connexion.html");
         exit();
     } else {
         echo "Les mots de passe ne correspondent pas.";
