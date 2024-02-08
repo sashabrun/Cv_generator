@@ -1,22 +1,21 @@
 <?php
-include "../config/config.php";
 // Add
 function addExperience($nom_entreprise, $poste, $date_debut, $date_fin, $description) {
-    global $conn;
+    $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
     $insert = $conn->prepare('INSERT INTO experiences_professionnelles (nom_entreprise, poste, date_debut, date_fin, description) VALUES (?, ?, ?, ?, ?)');
     $insert->execute([$nom_entreprise, $poste, $date_debut, $date_fin, $description]);
 }
 
 // Update
 function updateExperience($experienceID, $nom_entreprise, $poste, $date_debut, $date_fin, $description) {
-    global $conn;
+    $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
     $update = $conn->prepare('UPDATE experiences_professionnelles SET nom_entreprise=?, poste=?, date_debut=?, date_fin=?, description=? WHERE ID=?');
     $update->execute([$nom_entreprise, $poste, $date_debut, $date_fin, $description, $experienceID]);
 }
 
 // Delete
 function deleteExperience($experienceID) {
-    global $conn;
+    $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
     $delete = $conn->prepare('DELETE FROM experiences_professionnelles WHERE ID=?');
     $delete->execute([$experienceID]);
 }
@@ -24,7 +23,7 @@ function deleteExperience($experienceID) {
 // Get
 function getExperience($experienceID)
 {
-    global $conn;
+    $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
     $query = "SELECT * FROM experiences_professionnelles WHERE ID=?";
     $stmt = $conn->prepare($query);
     $stmt->execute([$experienceID]);

@@ -1,22 +1,21 @@
 <?php
-include "../config/config.php";
 // Add
 function addHobby($hobby) {
-    global $conn;
+    $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
     $insert = $conn->prepare('INSERT INTO hobbies (hobby) VALUES (?)');
     $insert->execute([$hobby]);
 }
 
 // Update
 function updateHobby($hobbyID, $hobby) {
-    global $conn;
+    $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
     $update = $conn->prepare('UPDATE hobbies SET hobby=? WHERE ID=?');
     $update->execute([$hobby, $hobbyID]);
 }
 
 // Delete
 function deleteHobby($hobbyID) {
-    global $conn;
+    $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
     $delete = $conn->prepare('DELETE FROM hobbies WHERE ID=?');
     $delete->execute([$hobbyID]);
 }
@@ -24,7 +23,7 @@ function deleteHobby($hobbyID) {
 // Get
 function getHobby($hobbyID)
 {
-    global $conn;
+    $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
     $query = "SELECT * FROM hobbies WHERE ID=?";
     $stmt = $conn->prepare($query);
     $stmt->execute([$hobbyID]);

@@ -109,3 +109,20 @@ input[type="button"]:hover {
         width: 90%;
     }
 }
+
+.item-container {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+
+}
+
+.academic-item,
+.experience-item,
+.hobby-item {
+    background-color: #004ea1;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    padding: 15px;
+    border-radius: 10px;
+}
