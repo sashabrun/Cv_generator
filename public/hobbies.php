@@ -1,9 +1,9 @@
 <?php
 // Add
-function addHobby($hobby) {
+function addHobby($hobby, $user_id) {
     $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
-    $insert = $conn->prepare('INSERT INTO hobbies (hobby) VALUES (?)');
-    $insert->execute([$hobby]);
+    $insert = $conn->prepare('INSERT INTO hobbies (hobby, user_id) VALUES (?, ?)');
+    $insert->execute([$hobby, $user_id]);
 }
 
 // Update

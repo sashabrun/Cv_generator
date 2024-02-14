@@ -1,10 +1,10 @@
 <?php
 
 // Add
-function addParcours($diplome, $etablissement, $date_debut, $date_fin, $description) {
+function addParcours($diplome, $etablissement, $date_debut, $date_fin, $description, $user_id) {
     $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
-    $insert = $conn->prepare('INSERT INTO parcours_academiques (diplome, etablissement, date_debut, date_fin, description) VALUES (?, ?, ?, ?, ?)');
-    $insert->execute([$diplome, $etablissement, $date_debut, $date_fin, $description]);
+    $insert = $conn->prepare('INSERT INTO parcours_academiques (diplome, etablissement, date_debut, date_fin, description, user_id) VALUES (?, ?, ?, ?, ?, ?)');
+    $insert->execute([$diplome, $etablissement, $date_debut, $date_fin, $description, $user_id]);
 }
 
 // Update

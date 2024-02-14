@@ -15,6 +15,7 @@ if (isset($_POST['submit'])) {
     if ($users->rowCount() > 0) {
         $_SESSION['pseudo'] = $username;
         $_SESSION['password'] = $password;
+        $_SESSION['id'] = $users->fetch(PDO::FETCH_ASSOC)['id'];
         header('Location: ../Front/Template/Accueil.php');
     }
 }

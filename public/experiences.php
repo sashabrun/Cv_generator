@@ -1,9 +1,9 @@
 <?php
 // Add
-function addExperience($nom_entreprise, $poste, $date_debut, $date_fin, $description) {
+function addExperience($nom_entreprise, $poste, $date_debut, $date_fin, $description, $user_id) {
     $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
-    $insert = $conn->prepare('INSERT INTO experiences_professionnelles (nom_entreprise, poste, date_debut, date_fin, description) VALUES (?, ?, ?, ?, ?)');
-    $insert->execute([$nom_entreprise, $poste, $date_debut, $date_fin, $description]);
+    $insert = $conn->prepare('INSERT INTO experiences_professionnelles (nom_entreprise, poste, date_debut, date_fin, description, user_id) VALUES (?, ?, ?, ?, ?, ?)');
+    $insert->execute([$nom_entreprise, $poste, $date_debut, $date_fin, $description, $user_id]);
 }
 
 // Update

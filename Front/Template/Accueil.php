@@ -18,7 +18,7 @@ if (isset($_SESSION['password'])) {
     <div class="container">
         <h1>Bienvenue sur la page D'Accueil !</h1>
 
-        <a href="CreateCV.html">
+        <a href="InfoCV.php">
             <input type="button" value="Creation de CV">
         </a>
 

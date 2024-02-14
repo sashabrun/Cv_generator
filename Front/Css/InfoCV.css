@@ -1,0 +1,131 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(0, 47, 103, 0.91);
+    color: #fff;
+    margin: 0;
+    display: block;
+    text-align: center;
+}
+
+.main-block {
+    background-color: #1967d5;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    margin: 20px auto; /* Centrer la main-block */
+    text-align: left;
+    width: 80%; /* Ajout de la taille à 80% */
+    display: block;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+h2 {
+    color: white;
+    margin-top: 10px; /* Ajout d'une marge en haut */
+}
+
+a {
+    color: #003c7c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0083ff;
+    text-decoration: underline;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+input[type='text'],
+input[type='date'],
+input[type="checkbox"],
+input[type="radio"] {
+    margin-left: 10px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 15px;
+    color: #000000;
+}
+
+input[type='submit'],
+input[type='button'] {
+    margin-left: 11px;
+    width: 98%;
+    padding: 10px;
+    background-color: #003c7c;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input[type='submit']:hover,
+input[type='button']:hover {
+    background-color: #0081ff;
+}
+
+@media screen and (max-width: 600px) {
+    .main-block {
+        width: 90%;
+    }
+}
+
+.item-container {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.academic-item,
+.experience-item,
+.hobby-item {
+    background-color: #004ea1;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    padding: 15px;
+    border-radius: 10px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-block2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item-container {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.academic-item,
+.experience-item,
+.hobby-item {
+    background-color: #004ea1;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+input[type="button"] {
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
