@@ -12,9 +12,9 @@ body {
     padding: 20px;
     border-radius: 10px;
     border: 1px solid #fff;
-    margin: 20px auto; /* Centrer la main-block */
+    margin: 20px auto;
     text-align: left;
-    width: 80%; /* Ajout de la taille à 80% */
+    width: 80%;
     display: block;
     text-align: center;
 }
@@ -27,7 +27,7 @@ h1 {
 
 h2 {
     color: white;
-    margin-top: 10px; /* Ajout d'une marge en haut */
+    margin-top: 10px;
 }
 
 a {
