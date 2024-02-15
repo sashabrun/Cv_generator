@@ -29,10 +29,6 @@ if (isset($_SESSION['password'])) {
 
     <div class="container2">
         <h1>Existing CVs</h1>
-        <!-- Display existing CVs here -->
-        <!-- You can use a loop to dynamically generate CV entries -->
-
-        <!-- Example CV entry -->
     </div>
 
     <?php

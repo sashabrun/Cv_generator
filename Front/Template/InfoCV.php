@@ -1,5 +1,4 @@
 <?php
-include "../../public/user.php";
 include "../../public/CV.php";
 
 session_start();
@@ -19,7 +18,7 @@ $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
 <?php
 if (isset($_SESSION['password']))  {
 ?>
-<form action="../../public/CV.php" method="post">
+<form action="" method="post">
 <div class="main-block">
     <h2>Parcours Académiques</h2>
     <?php
@@ -51,7 +50,7 @@ if (isset($_SESSION['password']))  {
             echo "<p>Poste: " . $row['poste'] . "</p>";
             echo "<p>Durée: " . $row['date_debut'] . " au " . $row['date_fin'] . "</p>";
             echo "<p>Description: " . $row['description'] . "</p>";
-            echo '<input type="checkbox" name="experiences" value="travail">';
+            echo "<input type='checkbox' name='experiences{$row['ID']}' value='travail'>";
             echo "</div>";
         }
     }

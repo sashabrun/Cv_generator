@@ -1,6 +1,6 @@
 <?php
-include "../../public/user.php";
 include "../../public/CV.php";
+include "../../public/pdf.php";
 
 session_start();
 $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
@@ -134,7 +134,19 @@ $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
     <div class="right-side">
         <section class="experience">
             <h2>Expérience Professionnelle</h2>
-            <?php
+<!--            --><?php
+//            $experiences = $conn->prepare("SELECT * FROM experiences_professionnelles LEFT JOIN liaison_experience ON experiences_professionnelles.ID = liaison_experience.ID LEFT JOIN cv ON cv.ID = liaison_experience.ID WHERE experiences_professionnelles.user_id=? AND cv.ID=?");
+//            $experiences->execute([intval(getUserID()), intval(getCVID())]);
+//
+//            while ($row = $experiences->fetch(PDO::FETCH_ASSOC)) {
+//                    echo "<div class='experience-item'>";
+//                    echo "<H3>Nom de l'entreprise: " . $row['nom_entreprise'] . "</H3>";
+//                    echo "<p>Poste: " . $row['poste'] . "</p>";
+//                    echo "<p>Durée: " . $row['date_debut'] . " au " . $row['date_fin'] . "</p>";
+//                    echo "<p>Description: " . $row['description'] . "</p>";
+//                    echo "</div>";
+//            }
+
             $experiences = $conn->query('SELECT * FROM experiences_professionnelles');
 
             while ($row = $experiences->fetch(PDO::FETCH_ASSOC)) {
@@ -147,7 +159,7 @@ $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
                     echo "</div>";
                 }
             }
-            ?>
+//            ?>
         </section>
 
         <section class="education">
@@ -185,7 +197,9 @@ $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
 </div>
 <div class="main-block">
     <input type="submit" name="submit" value="Enregistrer">
-    <input type="button" name="submit3" value="Telecharger en PDF" onclick="">
+    <form method="post">
+    <input type="submit" name="CV1" value="Telecharger en PDF">
+    </form>
     <a href="InfoCV.php">
         <input type="button" name="submit2" value="Retour page d'Info CV">
     </a>

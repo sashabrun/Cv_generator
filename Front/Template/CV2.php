@@ -186,7 +186,9 @@ $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
 </div>
 <div class="main-block">
     <input type="submit" name="submit" value="Enregistrer">
-    <input type="button" name="submit3" value="Telecharger en PDF" onclick="">
+    <form method="post">
+        <input type="submit" name="CV2" value="Telecharger en PDF">
+    </form>
     <a href="InfoCV.php">
         <input type="button" name="submit2" value="Retour page d'Info CV">
     </a>
