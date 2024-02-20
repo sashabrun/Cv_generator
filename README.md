@@ -16,6 +16,8 @@
 ### Connexion :
 
     ✓ Les utilisateurs doivent pouvoir se connecter avec leurs identifiants.
+    ✓ Les utilisateurs doivent pouvoir se déconnecter.
+    ✓ Les utilisateurs doivent pouvoir réinitialiser leur mot de passe.
 ### Saisie des informations :
 
     ✓ Après connexion, les utilisateurs accèdent à une page "Informations" où ils saisissent leurs données personnelles, expériences professionnelles, parcours académique, hobbies, etc.
