@@ -70,7 +70,7 @@ if (isset($_POST["submit3"])) {
 }
 
 // Traitement lors de la soumission du formulaire de modification
-if (isset($_POST["modif"])) {
+if (isset($_POST["modif2"])) {
     $diplome = $_POST["qualification"];
     $etablissement = $_POST["school"];
     $date_debut = $_POST["dateStart"];
@@ -82,4 +82,6 @@ if (isset($_POST["modif"])) {
     updateParcours($parcoursID, $diplome, $etablissement, $date_debut, $date_fin, $description);
     header("Location: ../Front/Template/Infos.php");
 }
+
+
 ?>
