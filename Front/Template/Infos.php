@@ -1,11 +1,9 @@
 <?php
-// Inclusion des fichiers nécessaires
 include "../../public/user.php";
 include "../../public/hobbies.php";
 include "../../public/parcours.php";
 include "../../public/experiences.php";
 
-// Démarrage de la session et connexion à la base de données MySQL
 session_start();
 $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
 ?>
@@ -13,11 +11,8 @@ $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Inclusion du fichier de style CSS -->
     <link rel="stylesheet" href="../Css/Infos.css">
-    <!-- Encodage du document -->
     <meta charset="UTF-8">
-    <!-- Titre de la page -->
     <title>Informations</title>
 </head>
 <body>
@@ -25,13 +20,11 @@ $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
 // Vérification si l'utilisateur est connecté
 if (isset($_SESSION['password']))  {
     ?>
-    <!-- Conteneur principal pour les informations -->
     <div class="container">
         <h1>Parcours Académique</h1>
         <h2>Ajouter une formation :</h2>
         <!-- Formulaire d'ajout de formation académique -->
         <form action="../../public/infos2.php" method="post">
-            <!-- Champs du formulaire -->
             <label>Diplôme :</label>
             <input name="qualification" type="text" />
 
@@ -49,7 +42,6 @@ if (isset($_SESSION['password']))  {
             <label>Description :</label>
             <input name="descriptions" type="text" /></p>
 
-            <!-- Bouton de soumission du formulaire -->
             <input type="submit" name="submit" value="Ajouter">
         </form>
         <!-- Affichage des parcours académiques de l'utilisateur -->
@@ -88,8 +80,6 @@ if (isset($_SESSION['password']))  {
         }
         ?>
     </div>
-
-    <!-- Conteneur pour les Expériences Professionnelles -->
     <div class="container">
         <h1>Expériences Professionnelles</h1>
         <h2>Ajouter une expérience :</h2>
@@ -112,8 +102,6 @@ if (isset($_SESSION['password']))  {
 
             <label>Description :</label>
             <input name="descriptions2" type="text" /></p>
-
-            <!-- Bouton de soumission du formulaire -->
             <input type="submit" name="submit2" value="Ajouter">
         </form>
         <!-- Affichage des expériences professionnelles de l'utilisateur -->
@@ -152,8 +140,6 @@ if (isset($_SESSION['password']))  {
         }
         ?>
     </div>
-
-    <!-- Conteneur pour les Loisirs -->
     <div class="container">
         <h1>Loisirs</h1>
         <h2>Ajouter un loisir :</h2>
@@ -162,8 +148,6 @@ if (isset($_SESSION['password']))  {
 
             <label>Nom du loisir :</label>
             <input name="loisir" type="text" />
-
-            <!-- Bouton de soumission du formulaire -->
             <input type="submit" name="submit3" value="Ajouter">
 
         </form>

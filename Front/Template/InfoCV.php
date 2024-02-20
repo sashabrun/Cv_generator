@@ -10,11 +10,8 @@ $conn = new PDO('mysql:host=localhost;dbname=database', 'root', '');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Encodage du document -->
     <meta charset="UTF-8">
-    <!-- Titre de la page -->
     <title>Mon CV</title>
-    <!-- Inclusion du fichier de style CSS -->
     <link rel="stylesheet" href="../Css/InfoCV.css">
 </head>
 
@@ -104,9 +101,7 @@ if (isset($_SESSION['password']))  {
         </div>
 
         <div class="main-block">
-            <!-- Bouton de soumission du formulaire -->
             <input type="submit" name="submit123" value="Valider">
-            <!-- Lien de retour vers la page d'accueil -->
             <a href="Accueil.php">
                 <input type="button" name="submit2" value="Retour page d'Accueil">
             </a>

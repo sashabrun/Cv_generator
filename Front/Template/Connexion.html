@@ -3,25 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Connexion</title>
-    <!-- Inclusion du fichier de style CSS -->
     <link rel="stylesheet" href="../Css/Inscription.css">
 </head>
 <body>
 <!-- Formulaire de connexion -->
 <div class="conn">
-    <!-- Action du formulaire vers le script de connexion -->
     <form method="post" action="../../public/connexion.php">
         <h1>Connexion</h1>
-        <!-- Champ pour le nom d'utilisateur -->
         <label>Nom d'utilisateur :</label>
         <input type="text" name="pseudo">
-        <!-- Champ pour le mot de passe -->
         <label>Mot de passe :</label>
         <input type="password" name="password">
-        <!-- Bouton de soumission du formulaire -->
         <input type="submit" name="submit" value="Connexion">
     </form>
-    <!-- Lien redirigeant vers la page d'inscription -->
     <a href="Inscription.html">
         <input type="button" name="submit" value="S'inscrire">
     </a>
