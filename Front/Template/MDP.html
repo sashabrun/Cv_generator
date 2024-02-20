@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mot de Passe Oublié</title>
+    <link rel="stylesheet" href="../Css/Inscription.css">
+</head>
+<body>
+<!-- Formulaire Mot de Passe Oublié -->
+<div class="conn">
+    <form method="post" action="../../public/reset_password.php">
+        <h1>Mot de Passe Oublié</h1>
+        <label>Nom d'utilisateur :</label>
+        <input type="text" name="pseudo" required>
+        <label>Adresse e-mail :</label>
+        <input type="email" name="email" required>
+        <label>Nouveau Mot de Passe :</label>
+        <input type="password" name="new_password" required>
+        <label>Confirmer le Mot de Passe :</label>
+        <input type="password" name="confirm_new_password" required>
+        <input type="submit" name="submit" value="Réinitialiser le Mot de Passe">
+    </form>
+    <a href="Connexion.html">
+        <input type="button" value="Retour à la Connexion">
+    </a>
+    <a href="Inscription.html">
+        <input type="button" value="Retour à l'Inscription">
+    </a>
+</div>
+</body>
+</html>
